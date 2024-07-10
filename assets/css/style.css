@@ -1,0 +1,38 @@
+:root {
+    --title-color: #000958;
+    --pseudo-title: #5E6085;
+    --normal-text: #656689;
+    --small-heading: #48496A;
+    --hyper-cta: #FF5B2E;
+
+    --main-bg: #FFFAF5;
+    --second-bg: #FFF6ED;
+
+    --title-font: "Sora", sans-serif;
+    --normal-font: "Poppins", sans-serif;
+}
+
+::selection{
+    background: transparent; color: #bc2f00;
+}
+::-webkit-scrollbar {background: transparent; width: 7px; height: 7px;}
+::-webkit-scrollbar-thumb {background: var(--hyper-cta); width: 7px; height: 7px; border-radius: 3.5px;}
+
+html {font-size: 62.5%;}
+html,body {scroll-behavior: smooth;}
+a {text-decoration: none;}
+ul {list-style-type: none; padding: 0; margin: 0;text-indent: 0;}
+
+body {
+    color: var(--normal-text); font-size: 1.6rem; font-family: var(--normal-font); font-weight: 400;
+}
+
+input, button {
+    outline: none; padding: 0;margin: 0;border: 0;
+    color: inherit; font-size: inherit; font-family: inherit; font-weight: inherit;
+    min-width: 0;
+}
+
+a, i {
+    text-decoration: none; color: inherit; 
+}
