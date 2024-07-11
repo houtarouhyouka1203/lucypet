@@ -4,6 +4,7 @@
     --normal-text: #656689;
     --small-heading: #48496A;
     --hyper-cta: #FF5B2E;
+    --w: #FFFFFF;
 
     --main-bg: #FFFAF5;
     --second-bg: #FFF6ED;
@@ -36,3 +37,46 @@ input, button {
 a, i {
     text-decoration: none; color: inherit; 
 }
+
+
+/* page */
+    html {
+        background: var(--main-bg);
+    }
+/* common selectors */
+    /* content margin */
+    .content-margin {
+        width: calc(100% - 45px * 2); max-width: 1170px;
+        margin-left: auto;margin-right: auto; padding-left: 45px; padding-right: 45px;
+    }
+    /* logo brand */
+    .brand {
+        display: flex; align-items: center; gap: 10px;
+    }
+        .brand__logo {
+            width: 35px;height: 35px;
+            background: url(./../img/logo/fav.png) center / contain no-repeat;
+            transition: transform .4s;
+        }
+        .brand:hover .brand__logo {
+            transform: rotate(180deg);
+        }
+        .brand__text {
+            color: var(--title-color); font-size: 2.4rem; font-weight: 700; font-family: var(--title-font);
+            transition: color .3s;
+        }
+        .brand:hover .brand__text {
+            color: var(--small-heading);
+        }
+    /* buttons */
+    .button2 {
+        display: inline-block; 
+        background: transparent;
+        color: var(--title-color); border: 1px solid currentColor;
+        transition: border-color .3s, background-color .3s, color .3s, box-shadow .3s;
+    }
+    .button2:hover {
+        color: var(--w);
+        border-color: transparent;
+        background: var(--title-color); box-shadow: 0px 13px 26px -8px rgba(0, 9, 88, 0.42);
+    }

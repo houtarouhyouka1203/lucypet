@@ -1,0 +1,31 @@
+/* headers */
+    header {
+        background: var(--main-bg);
+        position: fixed; top: -6px; padding-top: 6px; z-index: 999;
+        display: flex; align-items: center;
+        width: 100%;
+    }
+    .header__wrapper {
+        display: flex; align-items: center; justify-content: space-between;
+        padding-top: 20px; padding-bottom: 20px;
+    }
+        /* header>>logo */
+        /* header>>nav */
+        .list-menu ul {
+            display: flex; align-items: center; gap: 36px;
+        }
+            .list-menu ul a {
+                display: inline-block; 
+                color: var(--pseudo-title); font-size: 1.4rem;
+                transition: color .3s, font-weight .3s;
+            }
+            .list-menu ul a:hover {
+                font-weight: 600; color: var(--title-color);
+            }
+            .list-menu ul a:before {
+                display: block;content: attr(title);font-weight: bold;height: 0;overflow: hidden;visibility: hidden;
+            }
+        /* header>>cta */
+        .header__cta-button {
+            padding: 18px 32px; border-radius: 31px;
+        }
