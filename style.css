@@ -29,3 +29,82 @@
         .header__cta-button {
             padding: 18px 32px; border-radius: 31px;
         }
+/* section/hero */
+    .hero {
+        height: calc(100vh - 100px); max-height: 850px; min-height: 700px;
+    }
+    .hero__wrapper {
+        height: 100%;
+        display: grid; align-items: center; grid-gap: 120px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+        /* hero>>information */
+        .hero__title {margin-bottom: 24px;}
+        .hero__desc {margin-bottom: 38px;}
+        .hero__cta {display: flex; align-items: center; gap: 24px;}
+            .hero__book {padding: 22px 30px;}
+            .hero__book i {filter: drop-shadow(4px 3px 10px rgba(191, 41, 0, 0.40));}
+        /* hero>>wrapper */
+        .figure__wrapper {  }
+        .figure__relative {
+            width: 66%; aspect-ratio: 97 / 122; position: relative;
+        }
+            /* figure: big cat */
+            .cat__inner {
+                border-radius: 16px; border: 3px solid #FFF;
+                background: linear-gradient(180deg, #FFA78D 0%, #FF8C60 100%);
+                box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
+                width: 100%;height: 100%; overflow: hidden;
+                margin: 100px 0;
+            }
+            .cat__inner::before {
+                content: ""; display: block; height: 100%; 
+                background: url(./assets/img/landing/hero/cat.png) -150px -150px / 200% no-repeat;
+            }
+            .figure__circle {
+                width: 230px;height: 230px; 
+                position: absolute; bottom: 10px; left: -58px; z-index: -3;
+                background: url(./assets/img/landing/hero/circle.svg) center / cover no-repeat;
+            }
+            .figure__linear {
+                width: 50px;height: 100px; 
+                position: absolute; top: 17px; right: -40px; z-index: -3;
+                background: url(./assets/img/landing/hero/linear.svg) center / cover no-repeat;
+            }
+            .dog__inner {
+                width: 50%; aspect-ratio: 93 / 122; 
+                border: 2px solid rgba(255, 255, 255, 0.65);
+                background: linear-gradient(206deg, #FAA7AD 4.68%, #E87F8A 98.09%);
+                box-shadow: 8px 18px 36px -6px rgba(234, 148, 157, 0.17);
+                position: absolute; bottom: -58px; right: -163px; border-radius: 16px;
+            }
+            .dog__inner::before {
+                content: ""; display: block; height: 100%; 
+                background: url(./assets/img/landing/hero/dog.png) 0 75px/ contain no-repeat;
+            }
+            /* figure__meta */
+            .figure__meta {
+                border-radius: 10px; padding: 18px 14px;
+                display: grid;grid-gap: 20px;
+                background: #FFF; box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+                position: absolute; bottom: -94px;right: 9px;
+            }
+                .figure__item {display: flex; gap: 10px; align-items: center;}
+                    .figure__img {
+                        width: 48px;height: 48px; border-radius: 10px;
+                        background: #FEC23F; overflow: hidden;
+                    }
+                    .figure__img::before {
+                        content: ''; display: block; height: 100%;
+                        background: url(./assets/img/landing/hero/dog-small.png) right center / contain no-repeat;
+                    }
+                    .figure__img--2 {background: #C6E2FA;}
+                    .figure__img--2::before {background-image: url(./assets/img/landing/hero/dog-small-2.png);}
+                    .figure__hr {width: 222px;border: 2px solid #F2F2F2; border-radius: 1px;}
+                    .figure__desc {display: grid; grid-gap: 7px;}
+                        .figure__desc p {font-size: 1.4rem; font-family: var(--title-font); color: var(--title-color); font-weight: 600;}
+                        .figure__desc .blah {
+                            width: 118px;height: 4px;border-radius: 10px;
+                            opacity: 0.08; background: #000958; 
+                        }
+                        .figure__desc .blah2 {width: 39px; }
