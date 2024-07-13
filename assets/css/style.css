@@ -67,6 +67,30 @@ a, i {
     .common__section {
         margin-top: 77px; margin-bottom: 77px;
     }
+    /* tabs */
+    .tab {width: 100%; display: grid;}
+        /* tab/header */
+        .tab__header, .tab__hr {display: grid;grid-template-columns: repeat(3, 1fr); grid-gap: 56px; margin-bottom: 10px; cursor: pointer;}
+            .tab__header-text {
+                display: flex; align-items: center;gap: 10px;
+                transition: transform .3s;
+            }
+            .tab__header-text:hover {transform: translateY(-3px);}
+                .tab__txt {
+                    font-size: 1.8rem; font-family: var(--title-font); color: var(--small-heading); font-weight: 600; 
+                    transition: color .3s;
+                }
+                .tab__header-text:hover .tab__txt {color: var(--title-color);}
+                .tab__header-img {width: 18px; height: 18px; display: flex; align-items: center; justify-content: center;}
+        /* tab/hr */
+        .tab__hr {width: 100%; background: rgba(255, 91, 46, 0.07); border-radius: 2px; height: 4px;}
+            .tab__selected {max-width: 95px; width: 85%; border-radius: 2px; background: var(--hyper-cta); height: 4px;}
+        /* tab/container/items */
+        .tab__desc {
+            margin: 36px 0 32px; max-width: 391px; font-size: 1.4rem; line-height: 1.7;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient:vertical; overflow: hidden;}
+
+
     /* logo brand */
     .brand {
         display: flex; align-items: center; gap: 10px;
@@ -86,6 +110,7 @@ a, i {
         .brand:hover .brand__text {
             color: var(--small-heading);
         }
+    
     /* buttons */
         /* button1 */
             .button1 {
@@ -112,10 +137,12 @@ a, i {
                 background: var(--title-color); box-shadow: 0px 13px 26px -8px rgba(0, 9, 88, 0.42);
             }
         /* hyperlinks */
-            .hyperlink {
+            .hyperlink, .hyperlink2 {
                 font-weight: 500; color: var(--title-color); text-decoration: underline;
                 transition: color .3s;
             }
-            .hyperlink:hover {
+            .hyperlink:hover, .hyperlink2:hover {
                 color: var(--small-heading);
             }
+            /* hyperlinks/modification */
+            .hyperlink2 {color: var(--hyper-cta);}

@@ -183,3 +183,32 @@
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: text; background-clip: text;
                 }
+    /* section/features */
+    .features__wrapper {
+        display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px; grid-auto-rows: auto;
+    }
+        /* features/figures */
+        .features__figures {width: 100%; height: 100%;}
+        .feature__main-img {
+            height: 100%; width: calc(100% - 42px); margin-right: 42px;
+            border-radius: 18px;border: 2px solid #FFF; background: linear-gradient(180deg, #C6E2FA 0%, #94C2EA 100%);
+            box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17); position: relative;
+        }
+            .feature__main-img::before {
+                content: ''; display: block; width: 100%; height: 100%; 
+                background: url(./assets/img/landing/features/dogs.png) left center / contain no-repeat;
+                box-shadow: 0px 3px 63px 0px rgba(153, 183, 208, 0.59);border-radius: 18px
+            }
+            .feature__obj {position: absolute;}
+            .feature__obj1 {top: 13px;right: 63px;}
+            .feature__obj2 {top: -16px;right: 13px;}
+            .feature__obj3 {top: 33px;right: -21px;}
+            .feature__obj4 {top: 260px;right: -10px;}
+            .feature__obj5 {bottom: 150px;right: 19px;}
+            .feature__obj6 {bottom: -55px;right: 42px;} 
+
+        /* features/meta */
+        .feature__meta {width: 100%;}
+            .features__title {margin-bottom: 24px; margin-top: 36px;}
+            .features__desc {margin-bottom: 52px; margin-right: 32px;}
+            
