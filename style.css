@@ -289,4 +289,47 @@
                     }
                 .team__person-post {text-align: center; font-size: 1.4rem; margin-top: 6px;}
                 .team__person-name {font-size: 2.2rem; font-weight: 600;color: var(--title-color); font-family: var(--title-font); margin-top: 14px;}
+    /* section/pricing */
+    .pricing {background: var(--second-bg); padding: 86px 0;}
+    .pricing__wrapper {display: flex; flex-direction: column; align-items: center;}
+        .pricing__title{margin-bottom: 24px;}
+        .pricing__desc{margin-bottom: 38px; max-width: 709px;text-align: center;}
+        .pricing__time {
+            margin-bottom: 56px; border-radius: 31px; border: 1px solid rgb(255, 91, 46, 0.6); display: flex; align-items: center;
+        }
+            .pricing__time label {
+                padding: 20px 40px; color: var(--hyper-cta); cursor: pointer; border-radius: 31px;
+                transition: color .3s, background .3s;
+                display: block;
+            }
+            .pricing__time label:hover {
+                color: #e62525; 
+            }
+            .sl:has(:checked) label {background: var(--hyper-cta); color: #fff;}
+        .pricing__list {
+            display: flex; align-items: center; justify-content: center; gap: 44px;
+        }
+            .pricing__item {
+                flex-shrink: 0; width: 302px; padding: 30px 28px;box-sizing: border-box; background: #fff; border-radius: 20px;
+                transition: box-shadow .3s;
+            }
+            .pricing__item:hover {box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);}
+                .pricing__type{font-size: 1.2rem;color: var(--hyper-cta); margin-bottom: 8px;}
+                .pricing__name {font-size: 1.8rem; color: var(--title-color-2); font-family: var(--title-font); font-weight: 600; margin-bottom: 24px;}
+                .pricing__price {font-size: 3.4rem; color: var(--title-color-2); font-family: var(--title-font); font-weight: 700;}
+                .pricing__cta {
+                    border: 1px solid rgba(255, 91, 46, 0.60);
+                    margin: 24px 0; display: block;border-radius: 39px;
+                    transition: border .3s, color .3s, background .3s; text-align: center; padding: 14px 0; font-size: 1.6rem;
+                }
+                .pricing__cta:hover {
+                    border-color: rgb(255 91 46); 
+                }
+                /* pricing /desc */
+                .pricing__details { display: grid; grid-gap: 18px;}
+                .pricing__details li { display: flex; align-items: center; gap: 12px;}
+                .pricing__details li span { font-size: 1.4rem;}
+                .pricing__details li i {color: #FF5B2E;}
+                .pricing__less {opacity: .4;}
+
                 
