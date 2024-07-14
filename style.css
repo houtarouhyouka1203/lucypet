@@ -217,7 +217,7 @@
             .features__title {margin-bottom: 24px; margin-top: 36px;}
             .features__desc {margin-bottom: 52px; margin-right: 32px;}
     /* section/services */
-    .services {margin: 130px 0;padding-top: 68px;padding-bottom: 100px; background: var(--second-bg);}
+    .services {padding-top: 68px;padding-bottom: 100px; background: var(--second-bg);}
         /* services/heading */
         .services__title {margin: 15px 0 31px;}
         /* services/list */
@@ -256,4 +256,37 @@
                         border-radius: 10px; background: linear-gradient(180deg, #9DF1FB 0%, #73D0DB 108.14%); width: 95%; aspect-ratio: 41 / 35; 
                         position: absolute; bottom: 0; z-index: 0;
                     }
-                .services__more {padding: 20px 40px; margin-left: auto;margin-right: auto; margin-top: 45px; display: inline-block;}
+                .services__more {margin-left: auto;margin-right: auto; margin-top: 45px; display: inline-block;}
+    /* section/teams */
+    .team__wrapper {display: flex; flex-direction: column; align-items: center;}
+        .team__pseudo {margin-bottom: 15px;}
+        .team__title {margin-bottom: 45px;}
+        .team__list {
+            margin-bottom: 48px;
+            display: flex; align-items: center; justify-content: flex-start; gap: 25px; width: 100%;
+            overflow: hidden; 
+        }
+            .team__person {
+                flex-basis: 274px; flex-shrink: 0;
+                display: flex; align-items: center; flex-direction: column; 
+            }
+                .team__avatar {
+                    width: 100%; height: 295px; padding: 16px; box-sizing: border-box;
+                    position: relative; background: transparent; margin-bottom: 34px;
+                }
+                    .team__person-bg {
+                        position: absolute; top: 19px; left: 16px;right: 16px; height: calc(100% - 16px - 5px);
+                        border-radius: 129.5px; background: linear-gradient(180deg, #90CCFF 0%, #59A8EB 95.96%);
+                    }
+                        .team__person-photo, .team__person-photo img {
+                            position: absolute; bottom: 0; left: 0; width: 100%; border-radius: 130px;
+                        }
+                    .team__pattern--down {
+                        position: absolute; left: 0; bottom: 0px; width: 100%;
+                    }
+                    .team__pattern--up {
+                        position: absolute; left: 0; top: 16px; width: 100%;
+                    }
+                .team__person-post {text-align: center; font-size: 1.4rem; margin-top: 6px;}
+                .team__person-name {font-size: 2.2rem; font-weight: 600;color: var(--title-color); font-family: var(--title-font); margin-top: 14px;}
+                
