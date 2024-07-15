@@ -114,7 +114,19 @@ a, i {
         .brand:hover .brand__text {
             color: var(--small-heading);
         }
-    
+    /* navigations */
+    .nav {
+        width: 54px;height: 54px;
+        display: flex; align-items: center; justify-content: center;
+        background: transparent; border-radius: 50%;
+        color: var(--hyper-cta); border: 1.5px solid #FFD1C4;
+        transition: border-color .3s, background-color .3s, color .3s, box-shadow .3s;
+    }
+    .nav:hover {
+        color: var(--w);
+        border-color: var(--hyper-cta);
+        background: var(--hyper-cta); box-shadow: 0px 13px 26px -8px rgba(251 , 91, 46, 0.42);
+    }
     /* buttons */
         /* button1 */
             .button1 {

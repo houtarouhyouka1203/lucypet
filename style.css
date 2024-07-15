@@ -331,5 +331,29 @@
                 .pricing__details li span { font-size: 1.4rem;}
                 .pricing__details li i {color: #FF5B2E;}
                 .pricing__less {opacity: .4;}
+    /* section/testimonial (aka .rv) */
+    .testimonial {margin-top: 53px; margin-bottom: 130px;}
+    .rv__wrapper {
+        display: flex; align-items: center; grid-gap: 44px;
+        width: 100%;
+    }
+        /* navigation */
+        .rv__nav {flex-shrink: 0;}
+        /* user post */
+        .rv__post-list {flex-grow: 1; display: flex; align-items: center; justify-content: center;}
+            .rv__post {
+                width: 100%;
+                display: flex; align-items: center; grid-gap: 130px;}
+            /* review/avatar */
+            .rv__user {width: 30%; max-width: 274px; aspect-ratio: 13/20; background: transparent; display: flex; align-items: center;}
+                .rv__bg {width: 100%; aspect-ratio: 39/50;  background: #FFDA54;border-radius: 137px; position: relative; }
+                .rv__avatar {
+                    width: 100%;aspect-ratio: 2/3; position: absolute; bottom: 0;left: 0; border-radius: 137px; filter: drop-shadow(41px, 1px, 41px, rgba(255, 175, 19, 0.18)); object-fit: cover;
+                }
+            /* review/meta info */
+            .rv__contents {max-width: 553px;}
+            .rv__title {margin-bottom: 24px;}
+            .rv__comment {margin-bottom: 34px; color: #000; font-size: 1.8rem; line-height: 1.6;}
+            .rv__author {display: inline-flex; align-items: center; color: #282828; font-family: var(--title-font); font-weight: 600; font-size: 1.8rem;}
+            .rv__author::before {content: ''; display: inline-block; margin-right: 8px; width: 20px;height: 2px; border-radius: 1px; background: #000;}
 
-                
