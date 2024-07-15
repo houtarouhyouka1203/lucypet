@@ -348,7 +348,7 @@
             .rv__user {width: 30%; max-width: 274px; aspect-ratio: 13/20; background: transparent; display: flex; align-items: center;}
                 .rv__bg {width: 100%; aspect-ratio: 39/50;  background: #FFDA54;border-radius: 137px; position: relative; }
                 .rv__avatar {
-                    width: 100%;aspect-ratio: 2/3; position: absolute; bottom: 0;left: 0; border-radius: 137px; filter: drop-shadow(41px, 1px, 41px, rgba(255, 175, 19, 0.18)); object-fit: cover;
+                    width: 100%;aspect-ratio: 1.75/3; position: absolute; bottom: 0;left: 0; border-radius: 137px; filter: drop-shadow(41px, 1px, 41px, rgba(255, 175, 19, 0.18)); object-fit: cover;
                 }
             /* review/meta info */
             .rv__contents {max-width: 553px;}
@@ -356,4 +356,24 @@
             .rv__comment {margin-bottom: 34px; color: #000; font-size: 1.8rem; line-height: 1.6;}
             .rv__author {display: inline-flex; align-items: center; color: #282828; font-family: var(--title-font); font-weight: 600; font-size: 1.8rem;}
             .rv__author::before {content: ''; display: inline-block; margin-right: 8px; width: 20px;height: 2px; border-radius: 1px; background: #000;}
+    /* section/blogs */
+    /* blogs>>headers */
+    .blogs__header {margin-bottom: 54px; display: flex; width: 100%; align-items: center; justify-content: space-between;}
+        .blogs__header-desc {max-width: 350px;}
+        .blogs__desc {margin-bottom: 24px;}
+        .blogs__cta {font-size: 1.6rem; }
+    /* blogs>>list */
+    .blogs__list {width: 100%;display: flex; align-items: flex-start; gap: 48px; overflow-x: hidden;}
+        /* blogs??list>>item */
+        .blogs__item {width: 358px; flex-shrink: 0;}
+        .blogs__item:hover .blogs__item-img {filter: drop-shadow(-10px -8px 26px rgba(65, 132, 189, 0.15))}
+            .blogs__thumbnail {
+                width: 100%; height: 362px; border-radius: 24px; padding: 24px 36px; 
+                color: var(--w); font-family: var(--title-font); font-size: 1.4rem; position: relative; margin-bottom: 28px; box-sizing: border-box;
+            }
+            .blogs__item-img {position: absolute; top: 66px; left: 36px; right: 0;bottom: 0; transition: filter .3s;}
+            .blogs__item-title {margin-bottom: 16px; display: block;}
+            .blogs__item-title h3 {transition: color .3s;}
+            .blogs__item-title:hover h3 {color: var(--hyper-cta);}
+            .blogs__item-desc {font-size: 1.4rem;}
 
