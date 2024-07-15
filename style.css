@@ -333,6 +333,7 @@
                 .pricing__less {opacity: .4;}
     /* section/testimonial (aka .rv) */
     .testimonial {margin-top: 53px; margin-bottom: 130px;}
+    .rv__sel {margin: 0 auto;}
     .rv__wrapper {
         display: flex; align-items: center; grid-gap: 44px;
         width: 100%;
